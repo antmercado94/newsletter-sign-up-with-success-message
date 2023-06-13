@@ -1,3 +1,4 @@
+import Icons from './components/Icons';
 import './style/style.css';
 
 function App() {
@@ -5,6 +6,8 @@ function App() {
 		<>
 			<div>
 				<h1>working???</h1>
+				<Icons.List />
+				<Icons.Success />
 			</div>
 		</>
 	);
