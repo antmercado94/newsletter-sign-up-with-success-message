@@ -1,3 +1,12 @@
 :root {
 	--ff-primary: 'Roboto', sans-serif;
+
+	--white-400: #f1f1f1;
+	--dark-blue-200: #36384d;
+	--dark-blue-400: #333a4b;
+	--redish-400: #ff5869;
+	--orange-200: #ffe8e6;
+	--orange-400: #ff6253;
+
+	--ro-gradient: 90deg, rgba(247, 97, 91, 1) 0%, rgba(247, 143, 84, 1) 100%;
 }

@@ -13,6 +13,7 @@ function App() {
 				<Icons.List />
 				<Icons.Success />
 				<Button>Test</Button>
+				<Button className='btn-default'>Test</Button>
 				<Input placeholder='Email address' />
 				<Paragraph>Testing</Paragraph>
 			</div>

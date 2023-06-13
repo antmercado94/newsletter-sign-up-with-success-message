@@ -1,0 +1,51 @@
+.flex {
+	display: flex;
+}
+.flex--center {
+	justify-content: center;
+	align-items: center;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.text-color-white {
+	color: var(--white-400);
+}
+.text-color-dark-blue {
+	color: var(--dark-blue-400);
+}
+.text-color-orange {
+	color: var(--orange-400);
+}
+
+.background-color-dark-blue {
+	background-color: var(--dark-blue-200);
+}
+.background-color-darker-blue {
+	background-color: var(--dark-blue-400);
+}
+.background-color-light-orange {
+	background-color: var(--orange-200);
+}
+
+.btn-default {
+	position: relative;
+	background-color: var(--dark-blue-400);
+	color: var(--white-400);
+}
+.btn-default:hover,
+.btn-default:focus {
+	background: linear-gradient(var(--ro-gradient));
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: -5px;
+		transform: translate(10px, 8px);
+		z-index: -1;
+		background: linear-gradient(var(--ro-gradient));
+		filter: blur(10px);
+	}
+}
