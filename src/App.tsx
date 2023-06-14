@@ -1,7 +1,7 @@
-import SignUpView from './views/SignUpView';
-import { Modal } from './components/Modal';
+import { Modal } from './components/Modal/Modal';
+import SignUpView from './components/Modal/views/SignUpView';
+import SuccessView from './components/Modal/views/SuccessView';
 import './style/style.css';
-import SuccessView from './views/SuccessView';
 
 function App() {
 	return (
