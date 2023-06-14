@@ -31,7 +31,7 @@
 	background-color: var(--orange-200);
 }
 
-.btn-default {
+/* .btn-default {
 	position: relative;
 	background-color: var(--dark-blue-200);
 	color: var(--white-400);
@@ -53,4 +53,4 @@
 		background: linear-gradient(var(--ro-gradient));
 		filter: blur(10px);
 	}
-}
+} */

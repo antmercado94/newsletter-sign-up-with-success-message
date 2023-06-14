@@ -60,10 +60,16 @@
 	font-size: 0.8rem;
 
 	input {
-		padding: 1rem;
+		font-size: initial;
 		font-weight: 400;
+		padding: 1rem;
 		border-radius: 0.5rem;
 		border: 1px solid #cacaca;
+	}
+	input:active,
+	input:focus {
+		outline: none;
+		border-color: #000;
 	}
 }
 
@@ -78,4 +84,66 @@
 		display: flex;
 		gap: 1rem;
 	}
+}
+
+/* https://codyhouse.co/nuggets/animated-button-gradients */
+/* https://mycolor.space/gradient?ori=to+right&hex=%23FF5379&hex2=%23FF693E&sub=1 */
+
+.btn {
+	position: relative;
+	color: var(--white-400);
+	font-weight: 700;
+	padding: 1rem;
+	border: 0;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	background: linear-gradient(
+		120deg,
+		#ff5379,
+		#ff566b,
+		#ff5b5c,
+		#ff614d,
+		#ff693e,
+		var(--dark-blue-200),
+		var(--dark-blue-200),
+		var(--dark-blue-200),
+		var(--dark-blue-200),
+		var(--dark-blue-200),
+		var(--dark-blue-200),
+		var(--dark-blue-200),
+		var(--dark-blue-200)
+	);
+	background-size: 310% 100%;
+	background-position: 100% 0;
+	transition: background-position 0.2s;
+}
+
+.btn:before {
+	content: '';
+	position: absolute;
+	inset: 2px;
+	transform: translate(0px, 12px);
+	z-index: -1;
+	background-image: linear-gradient(
+		to right,
+		#ff5379,
+		#ff566b,
+		#ff5b5c,
+		#ff614d,
+		#ff693e
+	);
+	opacity: 0;
+	filter: blur(15px);
+	transition: opacity 0.2s;
+}
+
+.btn:hover {
+	background-position: 0 0;
+	&::before {
+		opacity: 1;
+	}
+}
+
+.btn:active:before {
+	display: none;
 }

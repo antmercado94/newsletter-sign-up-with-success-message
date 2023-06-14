@@ -29,7 +29,7 @@ const SuccessView: FC<SuccessViewProps> = ({}) => {
 							</Paragraph>
 						</div>
 						<div className={styles.end}>
-							<Button>Dismiss message</Button>
+							<Button className={styles.btn}>Dismiss message</Button>
 						</div>
 					</div>
 				</div>

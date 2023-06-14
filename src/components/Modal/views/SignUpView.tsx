@@ -41,7 +41,9 @@ const SignUpView: FC<SignUpViewProps> = ({}) => {
 								label='Email address'
 								placeholder='email@company.com'
 							/>
-							<Button>Subscribe to monthly newsletter</Button>
+							<Button className={styles.btn}>
+								Subscribe to monthly newsletter
+							</Button>
 						</div>
 					</div>
 				</div>
