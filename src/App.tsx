@@ -1,23 +1,12 @@
-import Button from './components/Button';
-import Heading from './components/Heading';
-import Icons from './components/Icons';
-import Input from './components/Input';
-import Paragraph from './components/Paragraph';
+import SignUpView from './views/SignUpView';
+import { Modal } from './components/Modal';
 import './style/style.css';
 
 function App() {
 	return (
-		<>
-			<div>
-				<Heading>working??</Heading>
-				<Icons.List />
-				<Icons.Success />
-				<Button>Test</Button>
-				<Button className='btn-default'>Test</Button>
-				<Input placeholder='Email address' />
-				<Paragraph>Testing</Paragraph>
-			</div>
-		</>
+		<Modal>
+			<SignUpView />
+		</Modal>
 	);
 }
 

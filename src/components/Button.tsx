@@ -5,7 +5,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 	({ className, children, ...props }, ref) => {
 		return (
-			<button className={className} ref={ref} {...props}>
+			<button className={`${className} btn-default`} ref={ref} {...props}>
 				{children}
 			</button>
 		);

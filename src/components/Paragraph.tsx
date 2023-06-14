@@ -1,10 +1,19 @@
 import { HTMLAttributes, forwardRef } from 'react';
 
-interface ParagraphProps extends HTMLAttributes<HTMLParagraphElement> {}
+interface ParagraphProps extends HTMLAttributes<HTMLParagraphElement> {
+	icon?: any | undefined;
+}
 
 const Paragraph = forwardRef<HTMLParagraphElement, ParagraphProps>(
-	({ className, children, ...props }, ref) => {
-		return (
+	({ className, children, icon, ...props }, ref) => {
+		return icon ? (
+			<span>
+				{icon}
+				<p className={className} ref={ref} {...props}>
+					{children}
+				</p>
+			</span>
+		) : (
 			<p className={className} ref={ref} {...props}>
 				{children}
 			</p>
