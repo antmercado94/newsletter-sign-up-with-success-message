@@ -1,13 +1,11 @@
 import { FC } from 'react';
-
 import SignUpIllustrationMobile from '../../../assets/images/illustration-sign-up-mobile.svg'; // mobile
 import SignUpIllustrationDesk from '../../../assets/images/illustration-sign-up-desktop.svg'; // desktop
 import styles from './modal-view.module.css';
 import Heading from '../../Heading';
 import Paragraph from '../../Paragraph';
 import Icons from '../../Icons';
-import Input from '../../Input';
-import Button from '../../Button';
+import EmailForm from './EmailForm';
 
 interface SignUpViewProps {}
 
@@ -44,16 +42,8 @@ const SignUpView: FC<SignUpViewProps> = ({}) => {
 							</Paragraph>
 							<Paragraph icon={<Icons.List />}>And much more!</Paragraph>
 						</div>
-
-						<div className={styles.end}>
-							<Input
-								className={styles.input}
-								label='Email address'
-								placeholder='email@company.com'
-							/>
-							<Button className={styles.btn}>
-								Subscribe to monthly newsletter
-							</Button>
+						<div className={styles.endForm}>
+							<EmailForm />
 						</div>
 					</div>
 				</div>

@@ -36,7 +36,8 @@
 	justify-content: center;
 }
 
-.end {
+.end,
+.endForm form {
 	flex: 1;
 	display: flex;
 	justify-content: end;
@@ -58,6 +59,16 @@
 	gap: 0.5rem;
 	font-weight: 700;
 	font-size: 0.8rem;
+
+	> div {
+		display: flex;
+		justify-content: space-between;
+
+		/* error */
+		span:nth-of-type(2) {
+			color: var(--orange-400);
+		}
+	}
 
 	input {
 		font-size: initial;

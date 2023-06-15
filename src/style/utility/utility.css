@@ -31,26 +31,10 @@
 	background-color: var(--orange-200);
 }
 
-/* .btn-default {
-	position: relative;
-	background-color: var(--dark-blue-200);
-	color: var(--white-400);
-	font-weight: 700;
-	padding: 1rem;
-	border: 0;
-	border-radius: 0.5rem;
+input.error,
+input.error:active,
+input.error:focus {
+	color: var(--orange-400);
+	background-color: var(--orange-200);
+	border-color: var(--orange-400);
 }
-.btn-default:hover,
-.btn-default:focus {
-	background: linear-gradient(var(--ro-gradient));
-
-	&::before {
-		content: '';
-		position: absolute;
-		inset: -5px;
-		transform: translate(10px, 8px);
-		z-index: -1;
-		background: linear-gradient(var(--ro-gradient));
-		filter: blur(10px);
-	}
-} */
