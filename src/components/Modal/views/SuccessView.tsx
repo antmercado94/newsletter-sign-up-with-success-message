@@ -14,7 +14,7 @@ const SuccessView: FC<SuccessViewProps> = ({}) => {
 			{/* content */}
 			<section>
 				<div className={styles.content}>
-					<div className={styles.wrapper}>
+					<div className={styles.successWrapper}>
 						<div className={styles.center}>
 							<div className={styles.icon}>
 								<Icons.Success />

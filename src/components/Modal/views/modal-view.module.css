@@ -1,6 +1,5 @@
 .container {
-	display: flex;
-	flex-direction: column;
+	background: var(--white-400);
 	color: var(--dark-blue-400);
 	width: 100%;
 }
@@ -15,7 +14,8 @@
 	margin-block: 1rem;
 }
 
-.wrapper {
+.signUpWrapper,
+.successWrapper {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -116,6 +116,7 @@
 	background-size: 310% 100%;
 	background-position: 100% 0;
 	transition: background-position 0.2s;
+	z-index: 1;
 }
 
 .btn:before {
@@ -146,4 +147,54 @@
 
 .btn:active:before {
 	display: none;
+}
+
+@media screen and (min-width: 960px) {
+	.container {
+		padding: 1.8rem;
+		border-radius: 30px;
+		z-index: 0;
+		-webkit-box-shadow: 0px 1px 10px -3px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 0px 1px 10px -3px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 1px 10px -3px rgba(0, 0, 0, 0.75);
+	}
+	.signUpWrapper,
+	.successWrapper {
+		height: unset;
+	}
+	.signUpWrapper {
+		flex-direction: row-reverse;
+		gap: 4rem;
+		padding-inline-start: 2.2rem;
+		max-width: 53rem;
+	}
+	.successWrapper {
+		flex-direction: column;
+		gap: 2.5rem;
+		max-width: 28rem;
+		padding-inline: 2rem;
+	}
+	.image {
+		img {
+			width: 100%;
+		}
+	}
+	.content {
+		flex: unset;
+		justify-content: center;
+		padding-inline: 0;
+	}
+	.heading {
+		font-size: 3.45rem;
+		margin-block: 1.5rem;
+	}
+	.end {
+		flex: unset;
+		padding-bottom: 2.25rem;
+	}
+
+	.list {
+		margin-block-start: 1.7rem;
+		margin-block-end: 2.5rem;
+	}
 }

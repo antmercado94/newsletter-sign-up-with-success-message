@@ -1,6 +1,7 @@
 import { FC } from 'react';
 
-import SignUpIllustration from '../../../assets/images/illustration-sign-up-mobile.svg'; // mobile
+import SignUpIllustrationMobile from '../../../assets/images/illustration-sign-up-mobile.svg'; // mobile
+import SignUpIllustrationDesk from '../../../assets/images/illustration-sign-up-desktop.svg'; // desktop
 import styles from './modal-view.module.css';
 import Heading from '../../Heading';
 import Paragraph from '../../Paragraph';
@@ -14,10 +15,19 @@ const SignUpView: FC<SignUpViewProps> = ({}) => {
 	return (
 		<div className={styles.container}>
 			<section>
-				<div className={styles.wrapper}>
+				<div className={styles.signUpWrapper}>
 					<div className={styles.top}>
 						<div className={styles.image}>
-							<img src={SignUpIllustration} alt='Sign up illustration' />
+							<picture>
+								<source
+									media='(min-width: 960px)'
+									srcSet={SignUpIllustrationDesk}
+								/>
+								<img
+									src={SignUpIllustrationMobile}
+									alt='Sign up illustration'
+								/>
+							</picture>
 						</div>
 					</div>
 					<div className={styles.content}>

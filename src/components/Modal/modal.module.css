@@ -1,0 +1,9 @@
+@media screen and (min-width: 960px) {
+	.modal {
+		display: flex;
+		align-items: center;
+		height: 100vh;
+		max-width: fit-content;
+		margin-inline: auto;
+	}
+}

@@ -5,4 +5,5 @@
 
 body {
 	font-family: var(--ff-primary);
+	background: var(--dark-blue-200);
 }
