@@ -13,7 +13,7 @@ const SuccessView: FC<SuccessViewProps> = ({}) => {
 	const { setIsSuccess } = useContext(ModalContext);
 
 	return (
-		<div className={styles.container}>
+		<div className={styles.successContainer}>
 			{/* content */}
 			<section>
 				<div className={styles.content}>
@@ -28,7 +28,7 @@ const SuccessView: FC<SuccessViewProps> = ({}) => {
 							<Paragraph className={styles.paragraph}>
 								A confirmation email has been sent to{' '}
 								<b>ash@loremcompany.com</b>. Please open it and click the button
-								inside to confirm your subscription
+								inside to confirm your subscription.
 							</Paragraph>
 						</div>
 						<div className={styles.end}>

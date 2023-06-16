@@ -11,7 +11,7 @@ interface SignUpViewProps {}
 
 const SignUpView: FC<SignUpViewProps> = ({}) => {
 	return (
-		<div className={styles.container}>
+		<div className={styles.signUpContainer}>
 			<section>
 				<div className={styles.signUpWrapper}>
 					<div className={styles.top}>
