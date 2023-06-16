@@ -21,6 +21,10 @@
 	display: flex;
 	flex-direction: column;
 	gap: 0.9rem;
+
+	/* 	
+max-width: fit-content;
+margin-inline: auto; */
 }
 
 .content {
@@ -38,12 +42,17 @@
 }
 
 .end,
+.endForm,
 .endForm form {
 	flex: 1;
 	display: flex;
-	justify-content: end;
-	padding-bottom: 2.45rem;
 	flex-direction: column;
+	justify-content: end;
+}
+
+.end,
+.endForm form {
+	padding-bottom: 2.45rem;
 	gap: 1.4rem;
 }
 
@@ -161,14 +170,49 @@
 	display: none;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 480px) {
 	.signUpContainer,
 	.successContainer {
-		border-radius: 30px;
+		border-radius: 15px;
 		z-index: 0;
 		-webkit-box-shadow: 0px 1px 10px -3px rgba(0, 0, 0, 0.75);
 		-moz-box-shadow: 0px 1px 10px -3px rgba(0, 0, 0, 0.75);
 		box-shadow: 0px 1px 10px -3px rgba(0, 0, 0, 0.75);
+	}
+	.signUpContainer,
+	.successContainer {
+		max-width: 26rem;
+	}
+	.successContainer {
+		padding: 0.8rem 0 0 0.5rem;
+	}
+	.signUpWrapper,
+	.successWrapper {
+		height: unset;
+	}
+	.signUpWrapper {
+		img {
+			border-radius: 15px 15px 0 0;
+		}
+	}
+	.successWrapper {
+		flex-direction: column;
+		gap: 2.5rem;
+	}
+	.icon {
+		margin-bottom: 0.5rem;
+	}
+	.end {
+		flex: unset;
+		padding-bottom: 2rem;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.signUpContainer,
+	.successContainer {
+		border-radius: 30px;
+		max-width: unset;
 	}
 	.signUpContainer {
 		padding: 1.4rem 1.4rem 1.4rem 0;
@@ -177,24 +221,18 @@
 		padding-inline: 3.8rem;
 		padding-block: 1.8rem;
 	}
-	.signUpWrapper,
-	.successWrapper {
-		height: unset;
-	}
+
 	.signUpWrapper {
 		flex-direction: row-reverse;
 		gap: 3.8rem;
 		padding-inline-start: 3.8rem;
-	}
-	.successWrapper {
-		flex-direction: column;
-		gap: 2.5rem;
-	}
-	.image {
+
 		img {
 			width: 100%;
+			border-radius: unset;
 		}
 	}
+
 	.content {
 		flex: unset;
 		justify-content: center;
@@ -205,9 +243,10 @@
 		font-size: 3.45rem;
 		margin-block: 1.25rem;
 	}
-	.end {
+
+	.endForm {
 		flex: unset;
-		padding-bottom: 2rem;
+		justify-content: unset;
 	}
 	.endForm form {
 		padding-bottom: 1.75rem;

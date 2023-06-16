@@ -1,4 +1,4 @@
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 480px) {
 	.modal {
 		display: flex;
 		align-items: center;
