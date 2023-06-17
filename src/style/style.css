@@ -1,0 +1,9 @@
+@import url('./fonts/fonts.css');
+@import url('./reset/reset.css');
+@import url('./vars/vars.css');
+@import url('./utility/utility.css');
+
+body {
+	font-family: var(--ff-primary);
+	background: var(--dark-blue-200);
+}

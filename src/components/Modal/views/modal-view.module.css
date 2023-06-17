@@ -1,0 +1,261 @@
+.signUpContainer,
+.successContainer {
+	background: var(--white-400);
+	color: var(--dark-blue-400);
+	width: 100%;
+}
+
+.image {
+	img {
+		width: 100%;
+	}
+}
+
+.icon {
+	margin-block: 1rem;
+}
+
+.signUpWrapper,
+.successWrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	gap: 0.9rem;
+}
+
+.content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding-inline: 1.5rem;
+}
+
+.center {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.end,
+.endForm,
+.endForm form {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.end,
+.endForm form {
+	padding-bottom: 2.45rem;
+	gap: 1.4rem;
+}
+
+.heading {
+	font-size: 2.45rem;
+	line-height: 1;
+	margin-block: 1.4rem;
+}
+
+.input {
+	/* label */
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	font-weight: 700;
+	font-size: 0.8rem;
+
+	> div {
+		display: flex;
+		justify-content: space-between;
+
+		/* error */
+		span:nth-of-type(2) {
+			color: var(--orange-400);
+		}
+	}
+
+	input {
+		font-size: initial;
+		font-weight: 400;
+		padding: 1rem;
+		border-radius: 0.5rem;
+		border: 1px solid #cacaca;
+	}
+
+	input:active,
+	input:focus {
+		outline: none;
+		border-color: #000;
+	}
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-block-start: 1.6rem;
+	margin-block-end: 2rem;
+
+	span {
+		display: flex;
+		gap: 1rem;
+
+		svg {
+			flex-shrink: 0;
+		}
+	}
+}
+
+/* https://codyhouse.co/nuggets/animated-button-gradients */
+/* https://mycolor.space/gradient?ori=to+right&hex=%23FF5379&hex2=%23FF693E&sub=1 */
+
+.btn {
+	position: relative;
+	color: var(--white-400);
+	font-weight: 700;
+	padding: 1rem;
+	border: 0;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	background: linear-gradient(
+		120deg,
+		#ff5379,
+		#ff566b,
+		#ff5b5c,
+		#ff614d,
+		#ff693e,
+		var(--dark-blue-400),
+		var(--dark-blue-400),
+		var(--dark-blue-400),
+		var(--dark-blue-400),
+		var(--dark-blue-400),
+		var(--dark-blue-400),
+		var(--dark-blue-400),
+		var(--dark-blue-400)
+	);
+	background-size: 310% 100%;
+	background-position: 100% 0;
+	transition: background-position 0.2s;
+	z-index: 1;
+}
+
+.btn:before {
+	content: '';
+	position: absolute;
+	inset: 2px;
+	transform: translate(0px, 12px);
+	z-index: -1;
+	background-image: linear-gradient(
+		to right,
+		#ff5379,
+		#ff566b,
+		#ff5b5c,
+		#ff614d,
+		#ff693e
+	);
+	opacity: 0;
+	filter: blur(15px);
+	transition: opacity 0.2s;
+}
+
+.btn:hover {
+	background-position: 0 0;
+
+	&::before {
+		opacity: 1;
+	}
+}
+
+.btn:active:before {
+	display: none;
+}
+
+/* breakpoint in-between mobile/desktop */
+@media screen and (min-width: 480px) {
+	.signUpContainer,
+	.successContainer {
+		border-radius: 15px;
+		z-index: 0;
+		-webkit-box-shadow: 0px 1px 10px -3px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 0px 1px 10px -3px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 1px 10px -3px rgba(0, 0, 0, 0.75);
+	}
+	.signUpContainer,
+	.successContainer {
+		max-width: 26rem;
+	}
+	.successContainer {
+		padding: 0.8rem 0 0 0.5rem;
+	}
+	.signUpWrapper,
+	.successWrapper {
+		min-height: unset;
+	}
+	.signUpWrapper {
+		img {
+			border-radius: 15px 15px 0 0;
+		}
+	}
+	.successWrapper {
+		flex-direction: column;
+		gap: 2.5rem;
+	}
+	.icon {
+		margin-bottom: 0.5rem;
+	}
+	.end {
+		flex: unset;
+		padding-bottom: 2rem;
+	}
+}
+
+/* desktop */
+@media screen and (min-width: 960px) {
+	.signUpContainer,
+	.successContainer {
+		border-radius: 30px;
+		max-width: unset;
+	}
+	.signUpContainer {
+		padding: 1.4rem 1.4rem 1.4rem 0;
+	}
+	.successContainer {
+		padding-inline: 3.8rem;
+		padding-block: 1.8rem;
+	}
+	.signUpWrapper {
+		flex-direction: row-reverse;
+		gap: 3.8rem;
+		padding-inline-start: 3.8rem;
+
+		img {
+			width: 100%;
+			border-radius: unset;
+		}
+	}
+	.content {
+		flex: unset;
+		justify-content: center;
+		padding-inline: 0;
+		max-width: 23rem;
+	}
+	.heading {
+		font-size: 3.45rem;
+		margin-block: 1.25rem;
+	}
+	.endForm {
+		flex: unset;
+		justify-content: unset;
+	}
+	.endForm form {
+		padding-bottom: 1.75rem;
+		gap: 1.6rem;
+	}
+	.list {
+		margin-block-start: 1.6rem;
+		margin-block-end: 2.6rem;
+		gap: 0.75rem;
+	}
+}

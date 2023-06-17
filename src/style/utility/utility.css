@@ -1,0 +1,7 @@
+input.error,
+input.error:active,
+input.error:focus {
+	color: var(--orange-400);
+	background-color: var(--orange-200);
+	border-color: var(--orange-400);
+}
