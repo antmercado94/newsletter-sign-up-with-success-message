@@ -1,20 +1,16 @@
-import { FC, useContext } from 'react';
-
-import styles from './modal-view.module.css';
-import Icons from '../../Icons';
-import Heading from '../../Heading';
-import Paragraph from '../../Paragraph';
-import Button from '../../Button';
+import { type FC, useContext } from 'react';
 import { ModalContext } from '../context/ModalContext';
+import styles from './modal-view.module.css';
+import Heading from '../../ui/Heading';
+import Paragraph from '../../ui/Paragraph';
+import Button from '../../ui/Button';
+import Icons from '../../Icons';
 
-interface SuccessViewProps {}
-
-const SuccessView: FC<SuccessViewProps> = ({}) => {
+const SuccessView: FC = () => {
 	const { setIsSuccess } = useContext(ModalContext);
 
 	return (
 		<div className={styles.successContainer}>
-			{/* content */}
 			<section>
 				<div className={styles.content}>
 					<div className={styles.successWrapper}>

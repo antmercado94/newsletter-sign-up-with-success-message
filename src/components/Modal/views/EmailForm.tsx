@@ -1,10 +1,10 @@
-import { FC, FormEvent, Ref, useContext, useRef, useState } from 'react';
-import Input from '../../Input';
-import Button from '../../Button';
-import styles from './modal-view.module.css';
+import { type FC, FormEvent, Ref, useContext, useRef, useState } from 'react';
 import { ModalContext } from '../context/ModalContext';
+import styles from './modal-view.module.css';
+import Input from '../../ui/Input';
+import Button from '../../ui/Button';
 
-const EmailForm: FC = ({}) => {
+const EmailForm: FC = () => {
 	const inputRef = useRef<HTMLInputElement>();
 	const { setIsSuccess } = useContext(ModalContext);
 	const [error, setError] = useState<string>('');

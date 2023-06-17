@@ -1,8 +1,8 @@
 import { useContext } from 'react';
+import { ModalContext } from './context/ModalContext';
 import styles from './modal.module.css';
 import SignUpView from './views/SignUpView';
 import SuccessView from './views/SuccessView';
-import { ModalContext } from './context/ModalContext';
 
 export const Modal = () => {
 	const { isSuccess } = useContext(ModalContext);

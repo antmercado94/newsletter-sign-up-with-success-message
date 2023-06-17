@@ -1,15 +1,13 @@
-import { FC } from 'react';
-import SignUpIllustrationMobile from '../../../assets/images/illustration-sign-up-mobile.svg'; // mobile
-import SignUpIllustrationDesk from '../../../assets/images/illustration-sign-up-desktop.svg'; // desktop
+import { type FC } from 'react';
+import SignUpIllustrationMobile from '../../../assets/images/illustration-sign-up-mobile.svg';
+import SignUpIllustrationDesk from '../../../assets/images/illustration-sign-up-desktop.svg';
 import styles from './modal-view.module.css';
-import Heading from '../../Heading';
-import Paragraph from '../../Paragraph';
+import Heading from '../../ui/Heading';
+import Paragraph from '../../ui/Paragraph';
 import Icons from '../../Icons';
 import EmailForm from './EmailForm';
 
-interface SignUpViewProps {}
-
-const SignUpView: FC<SignUpViewProps> = ({}) => {
+const SignUpView: FC = () => {
 	return (
 		<div className={styles.signUpContainer}>
 			<section>
