@@ -7,7 +7,7 @@ import Button from '../../ui/Button';
 import Icons from '../../Icons';
 
 const SuccessView: FC = () => {
-	const { setIsSuccess } = useContext(ModalContext);
+	const { setIsSuccess, successEmail } = useContext(ModalContext);
 
 	return (
 		<div className={styles.successContainer}>
@@ -22,9 +22,9 @@ const SuccessView: FC = () => {
 								Thanks for subscribing!
 							</Heading>
 							<Paragraph className={styles.paragraph}>
-								A confirmation email has been sent to{' '}
-								<b>ash@loremcompany.com</b>. Please open it and click the button
-								inside to confirm your subscription.
+								A confirmation email has been sent to <b>{successEmail}</b>.
+								Please open it and click the button inside to confirm your
+								subscription.
 							</Paragraph>
 						</div>
 						<div className={styles.end}>

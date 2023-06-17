@@ -6,7 +6,7 @@ import Button from '../../ui/Button';
 
 const EmailForm: FC = () => {
 	const inputRef = useRef<HTMLInputElement>();
-	const { setIsSuccess } = useContext(ModalContext);
+	const { setIsSuccess, setSuccessEmail } = useContext(ModalContext);
 	const [error, setError] = useState<string>('');
 
 	const submitEmail = (e: FormEvent) => {
@@ -15,10 +15,11 @@ const EmailForm: FC = () => {
 		const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
 		// email validation
-		if (!!inputVal?.match(emailRegex) === false) {
+		if (!!inputVal?.match(emailRegex) === false || !inputVal) {
 			setError('Valid email required');
 			return;
 		}
+		setSuccessEmail(inputVal);
 		setIsSuccess(true);
 	};
 
