@@ -1,14 +1,14 @@
 import { HTMLAttributes, forwardRef } from 'react';
 
 interface ParagraphProps extends HTMLAttributes<HTMLParagraphElement> {
-	icon?: any | undefined;
+	icon?: React.SVGProps<SVGSVGElement> | undefined;
 }
 
 const Paragraph = forwardRef<HTMLParagraphElement, ParagraphProps>(
 	({ className, children, icon, ...props }, ref) => {
 		return icon ? (
 			<span>
-				{icon}
+				<>{icon}</>
 				<p className={className} ref={ref} {...props}>
 					{children}
 				</p>
