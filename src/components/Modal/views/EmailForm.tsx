@@ -12,6 +12,7 @@ const EmailForm: FC = () => {
 	const submitEmail = (e: FormEvent) => {
 		e.preventDefault();
 		const inputVal = inputRef.current?.value;
+		//eslint-disable-next-line no-useless-escape
 		const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
 		// email validation
