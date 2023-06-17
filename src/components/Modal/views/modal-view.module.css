@@ -101,6 +101,10 @@
 	span {
 		display: flex;
 		gap: 1rem;
+
+		svg {
+			flex-shrink: 0;
+		}
 	}
 }
 

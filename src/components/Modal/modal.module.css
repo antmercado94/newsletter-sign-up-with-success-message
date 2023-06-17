@@ -1,9 +1,12 @@
+.modal {
+	width: fit-content;
+}
+
 @media screen and (min-width: 480px) {
 	.modal {
 		display: flex;
 		align-items: center;
 		height: 100vh;
-		max-width: fit-content;
 		margin-inline: auto;
 	}
 }
