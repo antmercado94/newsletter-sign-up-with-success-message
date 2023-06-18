@@ -4,4 +4,9 @@ input.error:focus {
 	color: var(--orange-400);
 	background-color: var(--orange-200);
 	border-color: var(--orange-400);
+
+	&::placeholder {
+		opacity: 0.8;
+		color: unset;
+	}
 }

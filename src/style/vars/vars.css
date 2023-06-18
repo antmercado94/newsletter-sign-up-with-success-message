@@ -2,9 +2,10 @@
 	--ff-primary: 'Roboto', sans-serif;
 
 	--white-400: #ffffff;
-	--dark-blue-200: #36384d;
-	--dark-blue-400: #232742;
-	--redish-400: #ff5869;
+	--grey-100: rgba(146, 148, 160, 0.8);
+	--grey-200: #36384e;
+	--grey-400: #242742;
 	--orange-200: #ffe8e6;
-	--orange-400: #ff6252;
+	--orange-400: #ff6257;
+	--redish-400: #ff5869;
 }
