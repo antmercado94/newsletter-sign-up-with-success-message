@@ -232,7 +232,7 @@
 	}
 	.signUpWrapper {
 		flex-direction: row-reverse;
-		gap: 3.8rem;
+		gap: 4rem;
 		padding-inline-start: 3.8rem;
 
 		img {
