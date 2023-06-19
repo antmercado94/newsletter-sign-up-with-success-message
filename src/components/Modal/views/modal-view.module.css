@@ -113,9 +113,6 @@
 	}
 }
 
-/* https://codyhouse.co/nuggets/animated-button-gradients */
-/* https://mycolor.space/gradient?ori=to+right&hex=%23FF5379&hex2=%23FF693E&sub=1 */
-
 .btn {
 	position: relative;
 	color: var(--white-400);
