@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-GpDmNP0mMh](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-GpDmNP0mMh)
+- Live Site URL: [https://antmercado94-newsletter-sign-up.netlify.app/](https://antmercado94-newsletter-sign-up.netlify.app/)
 
 ## My process
 
@@ -50,8 +50,8 @@ Users should be able to:
 
 ### Useful resources
 
-- [Gradient Generator](https://mycolor.space/gradient?ori=to+right&hex=%23FF5379&hex2=%23FF693E&sub=1) - A useful tool I used to create the gradient for the hover state of buttons.
-- [Animated Button Gradients](https://codyhouse.co/nuggets/animated-button-gradients) - This codepen contains CSS animations which I used to animate the hover state of the Newsletter signup buttons.
+- [Gradient Generator](https://mycolor.space/gradient?ori=to+right&hex=%23FF5379&hex2=%23FF693E&sub=1) - A web tool that was used to create the gradient for the buttons that can be seen when hovered.
+- [Animated Button Gradients](https://codyhouse.co/nuggets/animated-button-gradients) - This blog post contains the tutorial/CodePen I used for animating the background gradients of a button element.
 
 ## Author
 
